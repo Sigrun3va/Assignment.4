@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Assignment4-4.dart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Assignment4-4.dart</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">'dart:convert'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">'dart:io'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">&quot;dart:math&quot;</span><span class="s2">;</span>
+
+<span class="s2">void </span><span class="s0">main() {</span>
+<span class="s3">//4. Write a program that asks the user for a string (stdin.readLineSync()),</span>
+<span class="s3">// over and over again, forever, until he stops giving a string (just presses enter).</span>
+<span class="s3">// Store every entry in aList. At the end of the program,</span>
+<span class="s3">// print out the contents of the list in a reversed order.</span>
+  <span class="s0">print(</span>
+      <span class="s1">&quot;Type in all the Pokémons you can remember and then press Enter&quot;</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">List pokemon = []</span><span class="s2">;</span>
+  <span class="s0">bool active = </span><span class="s2">true;</span>
+
+  <span class="s0">String input = stdin.readLineSync(encoding: Encoding.getByName(</span><span class="s1">&quot;UTF-8&quot;</span><span class="s0">))</span><span class="s2">;</span>
+  <span class="s0">pokemon.add(input)</span><span class="s2">;</span>
+  <span class="s2">while</span><span class="s0">(active){</span>
+    <span class="s0">input = stdin.readLineSync(encoding: Encoding.getByName(</span><span class="s1">&quot;UTF-8&quot;</span><span class="s0">))</span><span class="s2">;</span>
+    <span class="s0">pokemon.add(input)</span><span class="s2">;</span>
+    <span class="s2">if</span><span class="s0">(input == </span><span class="s1">&quot;&quot;</span><span class="s0">) {</span>
+      <span class="s0">print(</span><span class="s1">&quot;you could remember the following Pokémon: </span><span class="s0">$pokemon</span><span class="s1">&quot;</span><span class="s0">)</span><span class="s2">;</span>
+      <span class="s2">var </span><span class="s0">reversedList = List.from(pokemon.reversed)</span><span class="s2">;</span>
+      <span class="s0">print(</span><span class="s1">&quot;here they are in opposite order: </span><span class="s0">$reversedList</span><span class="s1">&quot;</span><span class="s0">)</span><span class="s2">;</span>
+      <span class="s0">active = </span><span class="s2">false;</span>
+    <span class="s0">}</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+
+
+</pre>
+</body>
+</html>

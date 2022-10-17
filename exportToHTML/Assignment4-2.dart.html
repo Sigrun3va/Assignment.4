@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Assignment4-2.dart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Assignment4-2.dart</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">'dart:convert'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">'dart:io'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">&quot;dart:math&quot;</span><span class="s2">;</span>
+
+<span class="s2">void </span><span class="s0">main() {</span>
+<span class="s3">//2. Using the list above, write a program that prints out only the numbers</span>
+<span class="s3">// that are larger or equal to 20, and smaller or equal to 80.</span>
+<span class="s3">// Finally print out how many numbers met the condition.</span>
+<span class="s2">var </span><span class="s0">result = </span><span class="s4">0</span><span class="s2">;</span>
+<span class="s0">List&lt;int&gt; numbers = [</span><span class="s4">13</span><span class="s2">,</span><span class="s4">56</span><span class="s2">,</span><span class="s4">77</span><span class="s2">,</span><span class="s4">3</span><span class="s2">,</span><span class="s4">45</span><span class="s2">,</span><span class="s4">6</span><span class="s2">,</span><span class="s4">944</span><span class="s2">,</span><span class="s4">1</span><span class="s2">,</span><span class="s4">43</span><span class="s2">,</span><span class="s4">7</span><span class="s2">,</span><span class="s4">40</span><span class="s2">,</span><span class="s4">55</span><span class="s2">,</span><span class="s4">67</span><span class="s2">,</span><span class="s4">93</span><span class="s2">,</span><span class="s4">45</span><span class="s2">,</span><span class="s4">754</span><span class="s2">,</span><span class="s4">33</span><span class="s0">]</span><span class="s2">;</span>
+  <span class="s0">print(numbers)</span><span class="s2">;</span>
+
+  <span class="s2">for</span><span class="s0">(</span><span class="s2">var </span><span class="s0">i = </span><span class="s4">0</span><span class="s2">;</span><span class="s0">i &lt; numbers.length</span><span class="s2">; </span><span class="s0">i++) {</span>
+  <span class="s0">}</span>
+  <span class="s0">numbers.sort()</span><span class="s2">;</span>
+  <span class="s0">numbers.removeRange(</span><span class="s4">0</span><span class="s2">, </span><span class="s4">5</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">numbers.removeRange(</span><span class="s4">9</span><span class="s2">, </span><span class="s4">12</span><span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">print(numbers)</span><span class="s2">;</span>
+
+  <span class="s2">var </span><span class="s0">NumbersLeft = numbers.length</span><span class="s2">;</span>
+  <span class="s0">print(</span><span class="s1">&quot;Numbers left: </span><span class="s0">$NumbersLeft</span><span class="s1">&quot;</span><span class="s0">)</span><span class="s2">;</span>
+<span class="s0">}</span></pre>
+</body>
+</html>
